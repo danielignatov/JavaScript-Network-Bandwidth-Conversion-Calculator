@@ -1,0 +1,50 @@
+<!-- Written by Daniel Ignatov - code.danielignatov.com -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Online network bandwidth conversion calculator">
+	<meta name="keywords" content="Kbps, Mbps, Gbps, KB/s, MB/s, GB/s, convert, convertor, calculator, network">
+	<meta name="author" content="Daniel Ignatov">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>NetCal</title>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<nav><ul>
+		<li><a href="./">NetCal</a></li>
+		<li><a href="http://speedtest.net/" target="_blank">SpeedTest</a></li>
+		<li><a href="../calculator" target="_blank">Calculator</a></li>
+	</ul></nav>
+	<header>
+		<h1>Network bandwidth conversion calculator</h1>
+	</header>
+	<div class="input">
+		<input type="text" id="input" value="100">
+		<select id="convert-from">
+			<option value="Kbps">Kbps</option>
+			<option value="KB/s">KB/s</option>
+			<option value="Mbps" selected="selected">Mbps</option>
+			<option value="MB/s">MB/s</option>
+			<option value="Gbps">Gbps</option>
+			<option value="GB/s">GB/s</option>
+		</select>
+		<div id="chevron"></div>
+		<select id="convert-to">
+			<option value="Kbps">Kbps</option>
+			<option value="KB/s">KB/s</option>
+			<option value="Mbps">Mbps</option>
+			<option value="MB/s" selected="selected">MB/s</option>
+			<option value="Gbps">Gbps</option>
+			<option value="GB/s">GB/s</option>
+		</select>
+		<input type="submit" value="Calculate!" onclick="convert()">
+	</div>
+	<div class="output">
+		<p id="output-display">100 Mbps = 12.5 MB/s</p>
+	</div>
+</div>
+</body>
+</html>
