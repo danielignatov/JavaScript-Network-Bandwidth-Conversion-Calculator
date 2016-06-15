@@ -13,9 +13,6 @@ function convert() {
 	var convertFrom = document.getElementById("convert-from").value;
 	var convertTo = document.getElementById("convert-to").value;
 
-	// Check if the input value to be calculated is correct
-	// TODO
-
 	// Convert input value to kbps
 	switch(convertFrom) {
 		case "Kbps": kbpsValue = inputValue; break;
