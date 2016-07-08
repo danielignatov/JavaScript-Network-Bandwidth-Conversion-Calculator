@@ -22,7 +22,7 @@
 		<h1>Network bandwidth conversion calculator</h1>
 	</header>
 	<div class="input">
-		<input type="text" id="input" value="100">
+		<input type="text" id="input" value="100" pattern="[0-9]+\.?[0-9]+" title="Allowed input characters are numbers and decimal point." autocomplete="off" />
 		<select id="convert-from">
 			<option value="Kbps">Kbps</option>
 			<option value="KB/s">KB/s</option>
