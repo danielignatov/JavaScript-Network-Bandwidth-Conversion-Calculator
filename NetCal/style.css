@@ -132,3 +132,37 @@ span {
     margin: 20px auto;
     text-shadow: 1px 1px 1px #888888;
 }
+
+/* For screens width 721px to 980px */
+@media only screen and (min-width: 721px) and (max-width: 980px) {
+    body {
+        background-image: none;
+    }
+
+    #wrapper {
+        width: 90%;
+        height: 400px;
+    }
+
+    .output {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* For screens width 150px to 720px */
+@media only screen and (min-width: 150px) and (max-width: 720px) {
+    body {
+        background-image: none;
+    }
+
+    #wrapper {
+        width: 94%;
+        height: 350px;
+    }
+
+    .output {
+        width: 94%;
+        margin: 20px auto;
+    }
+}
